@@ -1,7 +1,10 @@
 h1 {
-    color: palevioletred;
+    color: darkmagenta;
     font-family: Helvetica;
-    font-size: 80px;
+    font-size: 60px;
     margin: 100px;
 }
 
+. hidden {
+
+}
