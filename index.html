@@ -9,38 +9,83 @@
 
 </head>
 <body>
-    <h1>Fun Chicken Facts!</h1>
-    <img src:"https://i.ytimg.com/vi/JvyK0tr6htM/maxresdefault.jpg">
-    <h2>Enter text below to learn some chicken truths today!</h2>
+    <header>
+    <h1><strong>Fun Chicken Facts!</strong></h1>
+    <img 
+    src="https://i.pinimg.com/originals/20/2b/73/202b73b2292e15fcf1aea699f29942ea.jpg"
+    height = 500px>
+    </header>
+    
+    <main>
+    <section>
+    <h2>Enter text below to learn some chicken truths today</h2>
+    <p>
     <label>
-        Noun: <input id="noun-a-input">
-    </label> <br> <br>
-    <label>
-        Action Verb: <input id="action-verb-input">
-    </label> <br> <br>
-    <label>
-        Plural Noun: <input id="plural-noun-input">
-    </label> <br> <br>
-    <label>
-        Noun: <input id="noun-b-input">
-    </label> <br> <br>
-    <label>
-        Adjective: <input id="adj-a-input">
-    </label> <br> <br>
-    <label>
-        Adjective: <input id="adj-b-input">
-    </label> <br> <br>
-
-    <button onclick="myFunction()">GENERATE MADLIB</button>
+        Plural Noun: 
+        <input id="plural-noun-a">
+    </label>
+    </p>
     
     <p>
-        Chickens are <span id="noun-a"></span> and will eat grains, <br>
-        plants, bugs and have even been known to <span id="action-verb"></span> rodents! <br>
-        A chicken will lay <span id="plural-noun"></span> without a rooster around, <br>
-        but that egg can never become a <span id="noun-b"></span>. Chickens are <span id="adj-a"></span> <br>
-        and <span id="adj-a"></span>, hence the expression "pecking order." The average lifespan <br>
-        of a <span id="noun-d"></span> is 8-10 years and they <span id="verb-d"></span> <br>
-        lay eggs the first 5 years.</p>
-    <script src="app.js"></script>  
+        <label>
+        Plural Noun: 
+        <input id="plural-noun-b">
+            </label>
+    </p>
+
+    <p>
+    <label>
+        Noun: 
+        <input id="noun-a">
+    </label>
+    </p>
+
+    <p>
+    <label>
+        Noun: 
+        <input id="noun-b">
+    </label>
+    </p>    
+    <label>
+        Adjective: 
+        <input id="adj-a">
+    </label>
+    </p>
+
+    <label>
+        Adjective: 
+        <input id="adj-b">
+    </label>
+    </p>
+
+    <p>
+    <label>
+        Noun: 
+        <input id="noun-c">
+    </label>
+    </p>
+
+    <label>
+        Action Verb: 
+        <input id="action-verb">
+    </label>
+    </p>
+
+    <p>
+        <button onclick="generateMadLib()"><strong>Make Your MadLib</strong></button>
+    </p>
+    </section> 
+
+    <section id="result" class="hidden">
+        <h2>Bonafide Chicken Truths</h2>
+        
+        <p>Chickens are <span id="plural-noun-a-span"></span> and will eat grains, plants, bugs and <br>
+        in some cases <span id="plural-noun-b-span"></span>. A chicken will lay a(n) <span id="noun-a-span"></span> without a rooster around, <br>
+        but that egg can never become a <span id="noun-b-span"></span>. Chickens are <span id="adj-a-span"></span> <br>
+        and <span id="adj-b-span"></span>, hence the expression "pecking order." The average lifespan <br>
+        of a <span id="noun-c-span"></span> is 8-10 years and they <span id="action-verb-span"></span> eggs the first 5 years.</p>
+    </section>
+    </main>
 </body>
+<script src="app.js"></script>  
 </html>
